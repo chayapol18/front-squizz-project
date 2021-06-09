@@ -9,7 +9,7 @@ import { useHistory } from 'react-router-dom'
 
 const contentHeight = 'calc(100vh - var(--footer-height))'
 
-function Result() {
+function Result({ statusAnswer, socketId, questionId }) {
   const history = useHistory()
 
   // useEffect(() => {
@@ -17,6 +17,8 @@ function Result() {
   //     history.push('/play/ranking')
   //   }, 5000)
   // })
+
+  console.log(statusAnswer)
   return (
     <Layout>
       <Content
@@ -27,8 +29,11 @@ function Result() {
         }}
         className="user-player-result-wrapper"
       >
-        {/* <CorrectAnswer /> */}
-        {/* <InCorrectAnswer /> */}
+        {statusAnswer[socketId][questionId] === 'correct' ? (
+          <CorrectAnswer />
+        ) : (
+          <InCorrectAnswer />
+        )}
         {/* <TimesUp /> */}
       </Content>
       <Footer>

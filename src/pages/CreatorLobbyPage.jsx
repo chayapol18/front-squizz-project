@@ -42,7 +42,11 @@ function CreatorLobbyPage() {
   const handleSkipButton = () => {}
 
   const handleStartButton = () => {
-    const data = { status: 'start', pin: squizz.pin, squizz }
+    const data = {
+      status: 'start',
+      pin: squizz.pin,
+      question: squizz.Questions[0]
+    }
     socket.emit('start_quiz', data)
     history.push(`/creator-play/${id}`)
   }

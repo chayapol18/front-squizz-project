@@ -24,7 +24,7 @@ function CorrectAnswer() {
       </div>
       <Text mt="10px" color="white">
         {' '}
-        Answer Streak 1
+        {/* Answer Streak 1 */}
       </Text>
       <div
         style={{

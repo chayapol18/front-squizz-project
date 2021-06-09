@@ -3,7 +3,20 @@ import { FaCircle } from 'react-icons/fa'
 import { BsFillTriangleFill, BsSquareFill } from 'react-icons/bs'
 import { FaStar } from 'react-icons/fa'
 
-function ShowResultComp() {
+function ShowResultComp({ eachOptionCount }) {
+  const allOptions =
+    Number(eachOptionCount.option1) +
+    Number(eachOptionCount.option2) +
+    Number(eachOptionCount.option3) +
+    Number(eachOptionCount.option4)
+
+  let heightOption1 = `${(eachOptionCount.option1 / allOptions) * 100}%`
+  let heightOption2 = `${(eachOptionCount.option2 / allOptions) * 100}%`
+  let heightOption3 = `${(eachOptionCount.option3 / allOptions) * 100}%`
+  let heightOption4 = `${(eachOptionCount.option4 / allOptions) * 100}%`
+
+  console.log(heightOption1)
+  console.log(heightOption2)
   return (
     <div
       style={{
@@ -37,11 +50,12 @@ function ShowResultComp() {
           }}
         >
           {' '}
-          10
+          {eachOptionCount.option1}
         </div>
+
         <div
           style={{
-            height: '60%',
+            height: heightOption1,
             width: '100%',
             backgroundColor: '#e21b3c',
             marginTop: 5,
@@ -68,7 +82,7 @@ function ShowResultComp() {
           width: 165,
           height: 250,
           position: 'absolute',
-          bottom: -120,
+          bottom: 7,
           right: 355
         }}
       >
@@ -85,11 +99,11 @@ function ShowResultComp() {
           }}
         >
           {' '}
-          0
+          {eachOptionCount.option2}
         </div>
         <div
           style={{
-            height: '10%',
+            height: heightOption2,
             width: '100%',
             backgroundColor: '#1368ce',
             marginTop: 5,
@@ -116,7 +130,7 @@ function ShowResultComp() {
           width: 165,
           height: 250,
           position: 'absolute',
-          bottom: -120,
+          bottom: 7,
 
           left: 355
         }}
@@ -134,11 +148,11 @@ function ShowResultComp() {
           }}
         >
           {' '}
-          0
+          {eachOptionCount.option3}
         </div>
         <div
           style={{
-            height: '10%',
+            height: heightOption3,
             width: '100%',
             backgroundColor: '#d89e00',
             marginTop: 5,
@@ -165,7 +179,7 @@ function ShowResultComp() {
           width: 165,
           height: 250,
           position: 'absolute',
-          bottom: -120,
+          bottom: 7,
 
           left: 530
         }}
@@ -183,11 +197,11 @@ function ShowResultComp() {
           }}
         >
           {' '}
-          0
+          {eachOptionCount.option4}
         </div>
         <div
           style={{
-            height: '10%',
+            height: heightOption4,
             width: '100%',
             backgroundColor: '#26890c',
             marginTop: 5,

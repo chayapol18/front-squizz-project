@@ -32,8 +32,9 @@ function CreatorShowResult() {
             fontWeight: 'bold'
           }}
         >
-          Quiz Name
+          Animal Quiz
         </div>
+
         <div
           style={{
             width: 550,
@@ -76,6 +77,7 @@ function CreatorShowResult() {
               </div>
             </div>
           </div>
+
           <div
             style={{
               backgroundColor: '#864cbf',

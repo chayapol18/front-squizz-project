@@ -9,14 +9,13 @@ const contentHeight = 'calc(100vh - var(--footer-height))'
 function UserPlayerNextQuestion() {
   const history = useHistory()
 
-  useEffect(() => {
-    setTimeout(() => {
-      history.push('/play/game-block')
-    }, 5000)
-  })
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     history.push('/play/game-block')
+  //   }, 5000)
+  // })
   return (
     <Layout>
-
       <Content
         style={{
           height: contentHeight,
@@ -25,7 +24,8 @@ function UserPlayerNextQuestion() {
         }}
         className="user-player-next-quietion-wrapper"
       >
-        <Heading color="white">Question 2</Heading> <br />
+        <Heading color="white">Waiting for other players answer ...</Heading>{' '}
+        <br />
         <Spinner
           thickness="15px"
           speed="0.80s"
