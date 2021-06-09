@@ -19,7 +19,7 @@ function CreatorShowResult() {
       >
         <div
           style={{
-            width: 100,
+            width: 120,
             height: 45,
             backgroundColor: 'white',
             position: 'absolute',
@@ -37,7 +37,7 @@ function CreatorShowResult() {
 
         <div
           style={{
-            width: 550,
+            width: 580,
             height: 350,
             position: 'absolute',
             bottom: 0,
@@ -48,11 +48,11 @@ function CreatorShowResult() {
           <div
             style={{
               backgroundColor: '#864cbf',
-              width: 140,
+              width: 170,
               height: 350,
               position: 'absolute',
               bottom: 0,
-              right: 360,
+              right: 390,
               display: 'flex',
               justifyContent: 'center',
               borderRadius: ' 5px 5px 0px 0px'
@@ -81,7 +81,7 @@ function CreatorShowResult() {
           <div
             style={{
               backgroundColor: '#864cbf',
-              width: 160,
+              width: 190,
               height: 420,
               position: 'absolute',
               bottom: 0,
@@ -112,11 +112,11 @@ function CreatorShowResult() {
           <div
             style={{
               backgroundColor: '#864cbf',
-              width: 140,
+              width: 170,
               height: 310,
               position: 'absolute',
               bottom: 0,
-              left: 360,
+              left: 390,
               display: 'flex',
               justifyContent: 'center',
               borderRadius: ' 5px 5px 0px 0px'

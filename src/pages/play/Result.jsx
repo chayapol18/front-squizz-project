@@ -6,6 +6,7 @@ import CorrectAnswer from '../../components/resultComp/CorrectAnswer'
 import InCorrectAnswer from '../../components/resultComp/InCorrectAnswer'
 import TimesUp from '../../components/resultComp/TimesUp'
 import { useHistory } from 'react-router-dom'
+import ShowResultComp from '../../components/resultComp/ShowResultComp'
 
 const contentHeight = 'calc(100vh - var(--footer-height))'
 
